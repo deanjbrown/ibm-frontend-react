@@ -6,13 +6,20 @@ class ContentRating extends Component {
     this.state = {
       likes: 0,
       dislikes: 0,
+      totalRatings: 0,
       // Please note, it is bad practise to have fucntions in state like this
       handleLike: () => {
-        this.setState((prevState) => ({ likes: prevState.likes + 1 }));
+        this.setState((prevState) => ({
+          likes: prevState.likes + 1,
+          totalRatings: prevState.totalRatings + 1,
+        }));
       },
 
       handleDislike: () => {
-        this.setState((prevState) => ({ dislikes: prevState.dislikes + 1 }));
+        this.setState((prevState) => ({
+          dislikes: prevState.dislikes + 1,
+          totalRatings: prevState.totalRatings + 1,
+        }));
       },
     };
   }
@@ -28,6 +35,9 @@ class ContentRating extends Component {
             Dislike ({this.state.dislikes})
           </button>
         </div>
+        <p>
+          <b>Total Ratings:</b> {this.state.totalRatings}
+        </p>
       </div>
     );
   }
