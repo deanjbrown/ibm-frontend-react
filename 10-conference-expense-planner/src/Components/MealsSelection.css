@@ -1,0 +1,16 @@
+.meals-selection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.meals-selection input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.meals-selection label {
+  color: var(--text-color);
+  padding-right: 5rem;
+  line-height: 1;
+}

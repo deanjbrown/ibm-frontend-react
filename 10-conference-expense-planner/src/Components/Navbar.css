@@ -1,0 +1,29 @@
+.navbar {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-brand {
+  color: var(--color-bg);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.navbar-link a {
+  color: var(--color-accent);
+  text-decoration: none;
+
+}
+
+.navbar-link a:hover {
+  color: var(--color-bg);
+}

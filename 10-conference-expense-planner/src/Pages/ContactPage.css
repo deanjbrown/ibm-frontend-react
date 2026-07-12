@@ -1,0 +1,97 @@
+.contact-page-container {
+  background-image:
+    linear-gradient(rgba(28, 42, 58, 0.55), rgba(28, 42, 58, 0.55)),
+    url("../assets/addons/microphones.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.contact-page-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.contact-left-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact-left-section p {
+padding-bottom: 2rem;
+}
+
+.contact-right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  background: rgba(28, 42, 58, 0.55);  /* your ink navy, translucent */
+  border-radius: 12px;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.contact-right-section h1 {
+  padding-bottom: 2rem;
+}
+.contact-right-section h3 {
+  padding-bottom: 1.25rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  font-size: 1.2rem;
+  color: var(--color-bg);
+  margin-bottom: 0.35rem;
+}
+
+input,
+textarea {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  resize: none;
+  max-width: 480px;
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--color-accent);
+}
+
+.submit-button {
+  align-self: flex-start;
+}
+
+.social-media-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-decoration: none;
+  list-style: none;
+  font-size: 3rem;
+}
+
+.social-media-links a {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+  color: var(--color-bg);
+  transition: color 0.3s ease;
+}

@@ -1,0 +1,33 @@
+.product-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.product-item-container {
+  border: 1px solid var(--color-border);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.product-item-container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-item-container p {
+  color: var(--color-secondary);
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.quantity button {
+  background-color: var(--color-primary);
+}

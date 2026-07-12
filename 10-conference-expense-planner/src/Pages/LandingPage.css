@@ -1,0 +1,37 @@
+.landing-page-container {
+  background-image:
+    linear-gradient(rgba(28, 42, 58, 0.55), rgba(28, 42, 58, 0.55)),
+    url("../assets/venues/auditorium.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.landing-page-content {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+  min-height: 100vh;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 2rem;
+  padding: 2rem;
+}

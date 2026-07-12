@@ -1,0 +1,48 @@
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.checkout-container h1, .checkout-container h3 {
+  color: var(--color-primary);
+}
+
+.checkout-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1250px;
+}
+
+.checkout-table td {
+  border-bottom: 1px solid #dddddd;
+}
+
+.checkout-table th,
+.checkout-table td {
+  padding: 0.75rem 1rem;
+}
+
+.checkout-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+}
+
+.checkout-table td:not(:first-child) {
+  text-align: right;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.checkout-container button {
+ align-self: flex-start;
+ margin: 2rem 1.2rem; 
+}
